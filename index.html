@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشروبات أبو السعود</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for elegant Arabic typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="welcome-text">أهلاً بكم في</p>
+            <h1 class="main-title">مشروبات أبو السعود</h1>
+            <p class="description">حيث يلتقي الانتعاش مع الجودة في كل كوب</p>
+            <button class="cta-button" onclick="scrollToMenu()">تصفح المشروبات</button>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">قائمتنا المميزة</h2>
+            
+            <!-- Category Buttons -->
+            <div class="category-buttons">
+                <button class="cat-btn active" data-category="all">الكل</button>
+                <button class="cat-btn" data-category="frappe">فرابيه</button>
+                <button class="cat-btn" data-category="mojito">موهيتو</button>
+                <button class="cat-btn" data-category="ice-coffee">آيس كوفي</button>
+                <button class="cat-btn" data-category="milkshake">ميلك شيك</button>
+                <button class="cat-btn" data-category="fresh-juice">عصائر فريش</button>
+            </div>
+
+            <!-- Drinks Grid -->
+            <div class="drinks-grid" id="drinks-grid">
+                <!-- Drink cards will be injected here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 مشروبات أبو السعود. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
