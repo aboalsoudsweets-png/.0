@@ -413,7 +413,6 @@ const drinksData = [
     },
 ];
 
-export default drinksData;
 // Function to render drinks into the grid
 function renderDrinks(category = 'all') {
     const grid = document.getElementById('drinks-grid');
@@ -463,7 +462,7 @@ function setupCategoryFilters() {
             const category = e.target.getAttribute('data-category');
             renderDrinks(category);
             
-            // إذا كان الزر ليس "فرابيه"، شيل حبات ا��قهوة
+            // إذا كان الزر ليس "فرابيه"، شيل حبات القهوة
             if (category !== 'frappe') {
                 removeCoffeeBeansEffect();
             } else {
@@ -480,22 +479,14 @@ window.scrollToMenu = function() {
     menuSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-// Initialize the application when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-    renderDrinks('all');
-    setupCategoryFilters();
-});
-
-
 // ==================== Snow Effect ====================
 let isSnowing = false;
 
 function startSnowEffect() {
-    if (isSnowing) return; // منع التكرار
+    if (isSnowing) return;
     isSnowing = true;
     document.body.classList.add('snow-active');
 
-    // إنشاء عنصر الثلج إذا لم يكن موجوداً
     let snow = document.getElementById('snow');
     if (!snow) {
         snow = document.createElement('div');
@@ -503,7 +494,6 @@ function startSnowEffect() {
         document.body.appendChild(snow);
     }
     
-    // إنتاج النكعبات بشكل متكرر
     const snowInterval = setInterval(() => {
         if (!isSnowing) {
             clearInterval(snowInterval);
@@ -529,14 +519,12 @@ function startSnowEffect() {
         }, duration * 1000);
     }, 100);
     
-    // إيقاف بعد 8 ثواني
     setTimeout(() => {
         isSnowing = false;
         document.body.classList.remove('snow-active');
     }, 8000);
 }
 
-// ربط التأثير بزر "آيس كوفي"
 function setupIceCoffeeButtonListener() {
     const iceCoffeeBtn = document.querySelector('[data-category="ice-coffee"]');
     if (iceCoffeeBtn) {
@@ -544,12 +532,6 @@ function setupIceCoffeeButtonListener() {
     }
 }
 
-// شغل الربط عند تحميل الصفحة
-document.addEventListener('DOMContentLoaded', () => {
-    renderDrinks('all');
-    setupCategoryFilters();
-    setupIceCoffeeButtonListener(); // أضف هذا السطر الجديد
-});
 // ==================== Coffee Beans Effect ====================
 let isCoffeeBeansActive = false;
 
@@ -565,7 +547,6 @@ function startCoffeeBeansEffect() {
         document.body.appendChild(coffeeContainer);
     }
 
-    // إنشاء حبات القهوة الكبيرة في الزوايا والأطراف
     const beanPositions = [
         { top: '10%', right: '5%' },
         { top: '15%', left: '8%' },
@@ -583,22 +564,18 @@ function startCoffeeBeansEffect() {
         
         bean.innerHTML = '<img src="bon.png" alt="coffee bean">';
         
-        // تطبيق الموضع
         Object.assign(bean.style, position);
         
-        // حجم كبير عشوائي بين 120-200px
         const size = 120 + Math.random() * 80;
         bean.style.width = size + 'px';
         bean.style.height = size + 'px';
         
-        // شفافية خفيفة (0.25 - 0.35)
         bean.style.opacity = 0.25 + Math.random() * 0.1;
         
         coffeeContainer.appendChild(bean);
     });
 }
 
-// دالة جديدة لحذف حبات القهوة
 function removeCoffeeBeansEffect() {
     const coffeeContainer = document.getElementById('coffee-beans');
     if (coffeeContainer) {
@@ -607,3 +584,10 @@ function removeCoffeeBeansEffect() {
     isCoffeeBeansActive = false;
     document.body.classList.remove('coffee-beans-active');
 }
+
+// Initialize the application when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    renderDrinks('all');
+    setupCategoryFilters();
+    setupIceCoffeeButtonListener();
+});
