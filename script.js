@@ -223,3 +223,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ==================== Coffee Beans Effect ====================
 
+// ==================== Coffee Beans Effect ====================
+let isCoffeeBeansActive = false;
+
+function startCoffeeBeansEffect() {
+    if (isCoffeeBeansActive) return;
+    isCoffeeBeansActive = true;
+    document.body.classList.add('coffee-beans-active');
+
+    let coffeeContainer = document.getElementById('coffee-beans');
+    if (!coffeeContainer) {
+        coffeeContainer = document.createElement('div');
+        coffeeContainer.id = 'coffee-beans';
+        document.body.appendChild(coffeeContainer);
+    }
+
+    // إنشاء حبات القهوة الكبيرة في الزوايا والأطراف
+    const beanPositions = [
+        { top: '10%', right: '5%' },
+        { top: '15%', left: '8%' },
+        { top: '50%', right: '3%' },
+        { top: '60%', left: '2%' },
+        { bottom: '20%', right: '10%' },
+        { bottom: '15%', left: '5%' },
+        { top: '5%', right: '30%' },
+        { bottom: '10%', right: '40%' }
+    ];
+    
+    beanPositions.forEach((position, index) => {
+        const bean = document.createElement('div');
+        bean.classList.add('coffee-bean');
+        
+        bean.innerHTML = '<img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=200&h=200&fit=crop" alt="coffee bean">';
+        
+        // تطبيق الموضع
+        Object.assign(bean.style, position);
+        
+        // حجم كبير عشوائي بين 120-200px
+        const size = 120 + Math.random() * 80;
+        bean.style.width = size + 'px';
+        bean.style.height = size + 'px';
+        
+        // شفافية خفيفة (0.25 - 0.35)
+        bean.style.opacity = 0.25 + Math.random() * 0.1;
+        
+        coffeeContainer.appendChild(bean);
+    });
+}
+
+// ربط التأثير بزر "فرابيه"
+function setupFrappeeButtonListener() {
+    const frappeBtn = document.querySelector('[data-category="frappe"]');
+    if (frappeBtn) {
+        frappeBtn.addEventListener('click', startCoffeeBeansEffect);
+    }
+}
