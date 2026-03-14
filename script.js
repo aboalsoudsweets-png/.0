@@ -29,10 +29,9 @@ const drinksData = [
     {
         id: 12,
         category: 'hot',
-        name: 'قهوة سنجل',
-        price: '50',
-        name: 'قهوة دبل',
-        price: '80',
+        
+        name: 'قهوة سنجل / دبل',
+        price: '80,50',
         image: ''
     },
 
