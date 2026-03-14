@@ -5,7 +5,7 @@ const drinksData = [
         id: 1,
         category: 'frappe',
         name: 'فرابيه كراميل',
-        description: 'مزيج رائع من القهوة والكراميل مع الكريمة المخفوقة',
+       
         price: '45',
         image: ''
     },
@@ -13,7 +13,24 @@ const drinksData = [
         id: 2,
         category: 'frappe',
         name: 'فرابيه شوكولاتة',
-        description: 'غني بصوص الشوكولاتة الفاخرة وقطع الشوكولاتة',
+        
+        price: '45',
+        image: ''
+    },
+
+     // hot (مشاريب ساخنة)
+    {
+        id: 11,
+        category: 'hot',
+        name: 'مشاريب ساخنة',
+        price: '45',
+        image: ''
+    },
+    {
+        id: 12,
+        category: 'frappe',
+        name: 'فرابيه شوكولاتة',
+       
         price: '45',
         image: ''
     },
@@ -23,7 +40,7 @@ const drinksData = [
         id: 3,
         category: 'mojito',
         name: 'موهيتو كلاسيك',
-        description: 'انتعاش الليمون والنعناع مع الثلج المجروش',
+        
         price: '35',
         image: ''
     },
@@ -31,7 +48,7 @@ const drinksData = [
         id: 4,
         category: 'mojito',
         name: 'موهيتو فراولة',
-        description: 'موهيتو منعش بنكهة الفراولة الطازجة',
+       
         price: '40',
         image: ''
     },
@@ -41,7 +58,7 @@ const drinksData = [
         id: 5,
         category: 'ice-coffee',
         name: 'سبانيش لاتيه بارد',
-        description: 'قهوة مختصة مع الحليب المكثف والثلج',
+        
         price: '50',
         image: ''
     },
@@ -49,7 +66,7 @@ const drinksData = [
         id: 6,
         category: 'ice-coffee',
         name: 'آيس أمريكانو',
-        description: 'قهوة سوداء باردة لتحفيز حواسك',
+       
         price: '35',
         image: ''
     },
@@ -59,7 +76,7 @@ const drinksData = [
         id: 7,
         category: 'milkshake',
         name: 'ميلك شيك فانيليا',
-        description: 'ميلك شيك كلاسيكي غني بالآيس كريم الفاخر',
+       
         price: '40',
         image: ''
     },
@@ -67,7 +84,7 @@ const drinksData = [
         id: 8,
         category: 'milkshake',
         name: 'ميلك شيك أوريو',
-        description: 'مزيج رائع من الأوريو والآيس كريم',
+       
         price: '45',
         image: ''
     },
@@ -77,7 +94,7 @@ const drinksData = [
         id: 9,
         category: 'fresh-juice',
         name: 'عصير برتقال',
-        description: 'عصير برتقال طازج 100٪ بدون إضافات',
+     
         price: '30',
         image: ''
     },
@@ -85,7 +102,7 @@ const drinksData = [
         id: 10,
         category: 'fresh-juice',
         name: 'عصير مانجو',
-        description: 'عصير مانجو استوائي منعش',
+       
         price: '35',
         image: ''
     }
