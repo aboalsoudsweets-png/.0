@@ -196,7 +196,7 @@ function startSnowEffect() {
         setTimeout(() => {
             snowflake.remove();
         }, duration * 1000);
-    }, 300);
+    },  200);
     
     // إيقاف بعد 1 ثواني
     setTimeout(() => {
