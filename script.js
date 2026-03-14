@@ -217,5 +217,6 @@ function setupIceCoffeeButtonListener() {
 document.addEventListener('DOMContentLoaded', () => {
     renderDrinks('all');
     setupCategoryFilters();
-    setupIceCoffeeButtonListener(); // أضف هذا السطر الجديد
+    setupIceCoffeeButtonListener(); 
+    setupFrappeeButtonListener();// أضف هذا السطر الجديد
 });
