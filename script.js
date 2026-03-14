@@ -1,20 +1,112 @@
-// Sample Data for Drinks
+// Sample Data for Drinks using high-quality images
 const drinksData = [
-    // ... كل البيانات اللي عندك
+    // Frappe (فرابيه)
+    {
+        id: 1,
+        category: 'frappe',
+        name: 'فرابيه كراميل',
+        description: 'مزيج رائع من القهوة والكراميل مع الكريمة المخفوقة',
+        price: '45',
+        image: ''
+    },
+    {
+        id: 2,
+        category: 'frappe',
+        name: 'فرابيه شوكولاتة',
+        description: 'غني بصوص الشوكولاتة الفاخرة وقطع الشوكولاتة',
+        price: '45',
+        image: ''
+    },
+    
+    // Mojito (موهيتو)
+    {
+        id: 3,
+        category: 'mojito',
+        name: 'موهيتو كلاسيك',
+        description: 'انتعاش الليمون والنعناع مع الثلج المجروش',
+        price: '35',
+        image: ''
+    },
+    {
+        id: 4,
+        category: 'mojito',
+        name: 'موهيتو فراولة',
+        description: 'موهيتو منعش بنكهة الفراولة الطازجة',
+        price: '40',
+        image: ''
+    },
+
+    // Ice Coffee (آيس كوفي)
+    {
+        id: 5,
+        category: 'ice-coffee',
+        name: 'سبانيش لاتيه بارد',
+        description: 'قهوة مختصة مع الحليب المكثف والثلج',
+        price: '50',
+        image: ''
+    },
+    {
+        id: 6,
+        category: 'ice-coffee',
+        name: 'آيس أمريكانو',
+        description: 'قهوة سوداء باردة لتحفيز حواسك',
+        price: '35',
+        image: ''
+    },
+
+    // Milkshake (ميلك شيك)
+    {
+        id: 7,
+        category: 'milkshake',
+        name: 'ميلك شيك فانيليا',
+        description: 'ميلك شيك كلاسيكي غني بالآيس كريم الفاخر',
+        price: '40',
+        image: ''
+    },
+    {
+        id: 8,
+        category: 'milkshake',
+        name: 'ميلك شيك أوريو',
+        description: 'مزيج رائع من الأوريو والآيس كريم',
+        price: '45',
+        image: ''
+    },
+
+    // Fresh Juice (عصائر فريش)
+    {
+        id: 9,
+        category: 'fresh-juice',
+        name: 'عصير برتقال',
+        description: 'عصير برتقال طازج 100٪ بدون إضافات',
+        price: '30',
+        image: ''
+    },
+    {
+        id: 10,
+        category: 'fresh-juice',
+        name: 'عصير مانجو',
+        description: 'عصير مانجو استوائي منعش',
+        price: '35',
+        image: ''
+    }
 ];
 
 // Function to render drinks into the grid
 function renderDrinks(category = 'all') {
     const grid = document.getElementById('drinks-grid');
-    grid.innerHTML = '';
+    grid.innerHTML = ''; // Clear current display
 
+    // Filter drinks based on category
     const filteredDrinks = category === 'all' 
         ? drinksData 
         : drinksData.filter(drink => drink.category === category);
 
+    // Create and inject HTML for each drink card
     filteredDrinks.forEach((drink, index) => {
         const card = document.createElement('div');
         card.className = 'drink-card';
+        
+        // Add a slight delay for a cascading animation effect
         card.style.animationDelay = `${index * 0.1}s`;
 
         card.innerHTML = `
@@ -38,15 +130,15 @@ function setupCategoryFilters() {
     
     buttons.forEach(button => {
         button.addEventListener('click', (e) => {
+            // Remove active class from all buttons
             buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to the clicked button
             e.target.classList.add('active');
+            
+            // Get the category and render drinks
             const category = e.target.getAttribute('data-category');
             renderDrinks(category);
-            
-            // ✅ إذا الزرار ليس "frappe" - شيل البن
-            if (category !== 'frappe') {
-                removeCoffeeBeans();
-            }
         });
     });
 }
@@ -57,14 +149,22 @@ window.scrollToMenu = function() {
     menuSection.scrollIntoView({ behavior: 'smooth' });
 }
 
+// Initialize the application when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    renderDrinks('all');
+    setupCategoryFilters();
+});
+
+
 // ==================== Snow Effect ====================
 let isSnowing = false;
 
 function startSnowEffect() {
-    if (isSnowing) return;
+    if (isSnowing) return; // منع التكرار
     isSnowing = true;
     document.body.classList.add('snow-active');
 
+    // إنشاء عنصر الثلج إذا لم يكن موجوداً
     let snow = document.getElementById('snow');
     if (!snow) {
         snow = document.createElement('div');
@@ -72,6 +172,7 @@ function startSnowEffect() {
         document.body.appendChild(snow);
     }
     
+    // ��نتاج النكعبات بشكل متكرر
     const snowInterval = setInterval(() => {
         if (!isSnowing) {
             clearInterval(snowInterval);
@@ -80,31 +181,45 @@ function startSnowEffect() {
         
         const snowflake = document.createElement('div');
         snowflake.classList.add('snowflake');
-        snowflake.textContent = '❄️';
+        snowflake.textContent = '🧊';
         snowflake.style.left = Math.random() * window.innerWidth + 'px';
+        
         const size = 15 + Math.random() * 30;
         snowflake.style.fontSize = size + 'px';
         snowflake.style.opacity = 0.4 + Math.random() * 0.6;
+        
         const duration = 4 + Math.random() * 6;
         snowflake.style.animationDuration = duration + 's';
+        
         snow.appendChild(snowflake);
+        
         setTimeout(() => {
             snowflake.remove();
         }, duration * 1000);
-    }, 200);
+    },  200);
     
+    // إيقاف بعد 1 ثواني
     setTimeout(() => {
         isSnowing = false;
         document.body.classList.remove('snow-active');
-    }, 8000);
+    }, 2000);
 }
 
+// ربط التأثير بزر "آيس كوفي"
 function setupIceCoffeeButtonListener() {
     const iceCoffeeBtn = document.querySelector('[data-category="ice-coffee"]');
     if (iceCoffeeBtn) {
         iceCoffeeBtn.addEventListener('click', startSnowEffect);
     }
 }
+
+// شغل الربط عند تحميل الصفحة
+document.addEventListener('DOMContentLoaded', () => {
+    renderDrinks('all');
+    setupCategoryFilters();
+    setupIceCoffeeButtonListener(); 
+    setupFrappeeButtonListener();// أضف هذا السطر الجديد
+});
 
 // ==================== Coffee Beans Effect ====================
 
@@ -123,6 +238,7 @@ function startCoffeeBeansEffect() {
         document.body.appendChild(coffeeContainer);
     }
 
+    // إنشاء حبات القهوة الكبيرة في الزوايا والأطراف
     const beanPositions = [
         { top: '10%', right: '5%' },
         { top: '15%', left: '8%' },
@@ -134,52 +250,31 @@ function startCoffeeBeansEffect() {
         { bottom: '10%', right: '40%' }
     ];
     
-    beanPositions.forEach((position) => {
+    beanPositions.forEach((position, index) => {
         const bean = document.createElement('div');
         bean.classList.add('coffee-bean');
+        
         bean.innerHTML = '<img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=200&h=200&fit=crop" alt="coffee bean">';
+        
+        // تطبيق الموضع
         Object.assign(bean.style, position);
+        
+        // حجم كبير عشوائي بين 120-200px
         const size = 120 + Math.random() * 80;
         bean.style.width = size + 'px';
         bean.style.height = size + 'px';
+        
+        // شفافية خفيفة (0.25 - 0.35)
         bean.style.opacity = 0.25 + Math.random() * 0.1;
+        
         coffeeContainer.appendChild(bean);
     });
 }
 
-// ✅ دالة لحذف البن
-function removeCoffeeBeans() {
-    const coffeeContainer = document.getElementById('coffee-beans');
-    if (coffeeContainer) {
-        coffeeContainer.innerHTML = '';
-    }
-    isCoffeeBeansActive = false;
-    document.body.classList.remove('coffee-beans-active');
-}
-
+// ربط التأثير بزر "فرابيه"
 function setupFrappeeButtonListener() {
     const frappeBtn = document.querySelector('[data-category="frappe"]');
     if (frappeBtn) {
         frappeBtn.addEventListener('click', startCoffeeBeansEffect);
     }
-}
-
-// Function to handle category button clicks
-function setupCategoryFilters() {
-    const buttons = document.querySelectorAll('.cat-btn');
-    
-    buttons.forEach(button => {
-        button.addEventListener('click', (e) => {
-            buttons.forEach(btn => btn.classList.remove('active'));
-            e.target.classList.add('active');
-            
-            const category = e.target.getAttribute('data-category');
-            renderDrinks(category);
-            
-            // ✅ شيل البن إذا الزرار ليس "frappe"
-            if (category !== 'frappe') {
-                removeCoffeeBeans();
-            }
-        });
-    });
 }
