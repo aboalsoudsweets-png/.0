@@ -5,7 +5,7 @@ const drinksData = [
         id: 1,
         category: 'frappe',
         name: 'فرابيه كراميل',
-       description:'';
+       description:'kk';
         price: '45',
         image: ''
     },
