@@ -326,7 +326,6 @@ body.snow-active {
 
 
 /* ==================== Coffee Beans Effect ==================== */
-/* ==================== Coffee Beans Effect ==================== */
 #coffee-beans {
     position: fixed;
     top: 0;
@@ -334,7 +333,7 @@ body.snow-active {
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    z-index: 0;
+    z-index: 0; /* ✅ غيّرناها إلى 0 - خلف كل شيء */
 }
 
 .coffee-bean {
