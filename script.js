@@ -220,3 +220,54 @@ document.addEventListener('DOMContentLoaded', () => {
     setupIceCoffeeButtonListener(); 
     setupFrappeeButtonListener();// أضف هذا السطر الجديد
 });
+
+// ==================== Coffee Beans Effect ====================
+let isCoffeeBeansActive = false;
+
+function startCoffeeBeansEffect() {
+    if (isCoffeeBeansActive) return;
+    isCoffeeBeansActive = true;
+    document.body.classList.add('coffee-beans-active');
+
+    let coffeeContainer = document.getElementById('coffee-beans');
+    if (!coffeeContainer) {
+        coffeeContainer = document.createElement('div');
+        coffeeContainer.id = 'coffee-beans';
+        document.body.appendChild(coffeeContainer);
+    }
+
+    // إنشاء حبات القهوة
+    const numberOfBeans = 15; // عدد حبات القهوة
+    
+    for (let i = 0; i < numberOfBeans; i++) {
+        const bean = document.createElement('div');
+        bean.classList.add('coffee-bean');
+        bean.textContent = '☕';
+        
+        // موضع عشوائي
+        bean.style.left = Math.random() * window.innerWidth + 'px';
+        bean.style.top = Math.random() * window.innerHeight + 'px';
+        
+        // حجم عشوائي
+        const size = 20 + Math.random() * 40;
+        bean.style.fontSize = size + 'px';
+        
+        // شفافية عشوائية
+        bean.style.opacity = 0.3 + Math.random() * 0.4;
+        
+        // حركة طفيفة عشوائية
+        const duration = 3 + Math.random() * 4;
+        bean.style.animationDuration = duration + 's';
+        bean.style.animationDelay = (Math.random() * 2) + 's';
+        
+        coffeeContainer.appendChild(bean);
+    }
+}
+
+// ربط التأثير بزر "فرابيه"
+function setupFrappeeButtonListener() {
+    const frappeBtn = document.querySelector('[data-category="frappe"]');
+    if (frappeBtn) {
+        frappeBtn.addEventListener('click', startCoffeeBeansEffect);
+    }
+}
