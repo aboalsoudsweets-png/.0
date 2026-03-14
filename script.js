@@ -22,14 +22,24 @@ const drinksData = [
     {
         id: 11,
         category: 'hot',
-        name: 'مشاريب ساخنة',
+        name: 'شاي',
         price: '45',
         image: ''
     },
     {
         id: 12,
-        category: 'frappe',
-        name: 'فرابيه شوكولاتة',
+        category: 'hot',
+        name: 'قهوة سنجل',
+        price: '50',
+        name: 'قهوة دبل',
+        price: '80',
+        image: ''
+    },
+
+    {
+        id: 13,
+        category: 'hot',
+        name: '',
        
         price: '45',
         image: ''
