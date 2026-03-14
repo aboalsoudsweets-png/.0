@@ -1,95 +1,419 @@
 // Sample Data for Drinks using high-quality images
 const drinksData = [
-    // Frappe (فرابيه)
+    // Hot Drinks (المشروبات الساخنة)
     {
         id: 1,
-        category: 'frappe',
-        name: 'فرابيه كراميل',
+        category: 'hot',
+        name: 'اميركان كوفي',
         description: '',
-        price: '45',
+        price: '80',
         image: ''
     },
     {
         id: 2,
-        category: 'frappe',
-        name: 'فرابيه شوكولاتة',
-        description: '',
-        price: '45',
-        image: ''
-    },
-    
-    // Mojito (موهيتو)
-    {
-        id: 3,
-        category: 'mojito',
-        name: 'موهيتو كلاسيك',
-        description: '',
-        price: '35',
-        image: ''
-    },
-    {
-        id: 4,
-        category: 'mojito',
-        name: 'موهيتو فراولة',
-        description: '',
-        price: '40',
-        image: ''
-    },
-
-    // Ice Coffee (آيس كوفي)
-    {
-        id: 5,
-        category: 'ice-coffee',
-        name: 'سبانيش لاتيه بارد',
+        category: 'hot',
+        name: 'قهوة سنجل',
         description: '',
         price: '50',
         image: ''
     },
     {
+        id: 3,
+        category: 'hot',
+        name: 'قهوة دبل',
+        description: '',
+        price: '80',
+        image: ''
+    },
+    {
+        id: 4,
+        category: 'hot',
+        name: 'نسكافية',
+        description: '',
+        price: '80',
+        image: ''
+    },
+    {
+        id: 5,
+        category: 'hot',
+        name: 'كابيتشينو',
+        description: '',
+        price: '80',
+        image: ''
+    },
+    {
         id: 6,
+        category: 'hot',
+        name: 'ينسون',
+        description: '',
+        price: '50',
+        image: ''
+    },
+    {
+        id: 7,
+        category: 'hot',
+        name: 'كركديه',
+        description: '',
+        price: '50',
+        image: ''
+    },
+    {
+        id: 8,
+        category: 'hot',
+        name: 'قرفه',
+        description: '',
+        price: '50',
+        image: ''
+    },
+    {
+        id: 9,
+        category: 'hot',
+        name: 'جنزبيل',
+        description: '',
+        price: '50',
+        image: ''
+    },
+    {
+        id: 10,
+        category: 'hot',
+        name: 'اعشاب',
+        description: '',
+        price: '60',
+        image: ''
+    },
+    {
+        id: 11,
+        category: 'hot',
+        name: 'اسبريسو سنجل',
+        description: '',
+        price: '50',
+        image: ''
+    },
+    {
+        id: 12,
+        category: 'hot',
+        name: 'اسبريسو دبل',
+        description: '',
+        price: '80',
+        image: ''
+    },
+    {
+        id: 13,
+        category: 'hot',
+        name: 'لاتيه',
+        description: '',
+        price: '90',
+        image: ''
+    },
+    {
+        id: 14,
+        category: 'hot',
+        name: 'قهوة تركي',
+        description: '',
+        price: '50',
+        image: ''
+    },
+    {
+        id: 15,
+        category: 'hot',
+        name: 'قهوة فرنساوي',
+        description: '',
+        price: '60',
+        image: ''
+    },
+    {
+        id: 16,
+        category: 'hot',
+        name: 'هوت شوكليت',
+        description: '',
+        price: '80',
+        image: ''
+    },
+    {
+        id: 17,
+        category: 'hot',
+        name: 'شاي',
+        description: '',
+        price: '90',
+        image: ''
+    },
+    {
+        id: 18,
+        category: 'hot',
+        name: 'شاي بالنعنع',
+        description: '',
+        price: '50',
+        image: ''
+    },
+    {
+        id: 19,
+        category: 'hot',
+        name: 'حليب ساخن',
+        description: '',
+        price: '60',
+        image: ''
+    },
+    {
+        id: 20,
+        category: 'hot',
+        name: 'شاي بحليب',
+        description: '',
+        price: '75',
+        image: ''
+    },
+
+    // Frappe (فرابيه)
+    {
+        id: 21,
+        category: 'frappe',
+        name: 'فرابيه كلاسيك',
+        description: '',
+        price: '80',
+        image: ''
+    },
+    {
+        id: 22,
+        category: 'frappe',
+        name: 'فرابيه نوتيلا',
+        description: '',
+        price: '95',
+        image: ''
+    },
+    {
+        id: 23,
+        category: 'frappe',
+        name: 'فرابيه لوتس',
+        description: '',
+        price: '95',
+        image: ''
+    },
+    {
+        id: 24,
+        category: 'frappe',
+        name: 'فرابيه بندق',
+        description: '',
+        price: '95',
+        image: ''
+    },
+    {
+        id: 25,
+        category: 'frappe',
+        name: 'فرابيه فانيليا',
+        description: '',
+        price: '95',
+        image: ''
+    },
+    {
+        id: 26,
+        category: 'frappe',
+        name: 'فرابيه كراميل',
+        description: '',
+        price: '95',
+        image: ''
+    },
+    {
+        id: 27,
+        category: 'frappe',
+        name: 'فرابيه شوكليت',
+        description: '',
+        price: '95',
+        image: ''
+    },
+
+    // Ice Coffee (آيس كوفي)
+    {
+        id: 28,
         category: 'ice-coffee',
-        name: 'آيس أمريكانو',
-        description: 'قهوة سوداء باردة لتحفيز حواسك',
-        price: '35',
+        name: 'ايس كافيه',
+        description: '',
+        price: '80',
+        image: ''
+    },
+    {
+        id: 29,
+        category: 'ice-coffee',
+        name: 'آيس لاتيه',
+        description: '',
+        price: '90',
+        image: ''
+    },
+    {
+        id: 30,
+        category: 'ice-coffee',
+        name: 'ايس سبانش لاتيه',
+        description: '',
+        price: '90',
+        image: ''
+    },
+    {
+        id: 31,
+        category: 'ice-coffee',
+        name: 'ايس لوتس',
+        description: '',
+        price: '90',
+        image: ''
+    },
+    {
+        id: 32,
+        category: 'ice-coffee',
+        name: 'ايس موكا',
+        description: '',
+        price: '90',
+        image: ''
+    },
+    {
+        id: 33,
+        category: 'ice-coffee',
+        name: 'ايس وايت موكا',
+        description: '',
+        price: '90',
+        image: ''
+    },
+
+    // Mojito (موهيتو)
+    {
+        id: 34,
+        category: 'mojito',
+        name: 'موهيتو كلاسيك',
+        description: '',
+        price: '100',
+        image: ''
+    },
+    {
+        id: 35,
+        category: 'mojito',
+        name: 'موهيتو بلو بيري',
+        description: '',
+        price: '100',
+        image: ''
+    },
+    {
+        id: 36,
+        category: 'mojito',
+        name: 'موهيتو باشون',
+        description: '',
+        price: '100',
+        image: ''
+    },
+    {
+        id: 37,
+        category: 'mojito',
+        name: 'موهيتو فراوله',
+        description: '',
+        price: '100',
+        image: ''
+    },
+    {
+        id: 38,
+        category: 'mojito',
+        name: 'موهيتو اناناس',
+        description: '',
+        price: '100',
+        image: ''
+    },
+    {
+        id: 39,
+        category: 'mojito',
+        name: 'موهيتو بطيخ',
+        description: '',
+        price: '100',
+        image: ''
+    },
+    {
+        id: 40,
+        category: 'mojito',
+        name: 'موهيتو تفاح',
+        description: '',
+        price: '100',
+        image: ''
+    },
+    {
+        id: 41,
+        category: 'mojito',
+        name: 'موهيتو مانجه',
+        description: '',
+        price: '100',
+        image: ''
+    },
+    {
+        id: 42,
+        category: 'mojito',
+        name: 'موهيتو خوخ',
+        description: '',
+        price: '100',
         image: ''
     },
 
     // Milkshake (ميلك شيك)
     {
-        id: 7,
+        id: 43,
         category: 'milkshake',
-        name: 'ميلك شيك فانيليا',
-        description: 'ميلك شيك كلاسيكي غني بالآيس كريم الفاخر',
-        price: '40',
+        name: 'ميلك شيك فراولة',
+        description: '',
+        price: '85',
         image: ''
     },
     {
-        id: 8,
+        id: 44,
         category: 'milkshake',
-        name: 'ميلك شيك أوريو',
-        description: 'مزيج رائع من الأوريو والآيس كريم',
-        price: '45',
+        name: 'ميلك شيك شوكولاتة',
+        description: '',
+        price: '85',
+        image: ''
+    },
+    {
+        id: 45,
+        category: 'milkshake',
+        name: 'ميلك شيك مانجة',
+        description: '',
+        price: '85',
+        image: ''
+    },
+    {
+        id: 46,
+        category: 'milkshake',
+        name: 'ميلك شيك فانيليا',
+        description: '',
+        price: '85',
+        image: ''
+    },
+    {
+        id: 47,
+        category: 'milkshake',
+        name: 'ميلك شيك لوتس',
+        description: '',
+        price: '85',
+        image: ''
+    },
+    {
+        id: 48,
+        category: 'milkshake',
+        name: 'ميلك شيك نوتيلا',
+        description: '',
+        price: '85',
+        image: ''
+    },
+    {
+        id: 49,
+        category: 'milkshake',
+        name: 'ميلك شيك بلو بيري',
+        description: '',
+        price: '85',
         image: ''
     },
 
     // Fresh Juice (عصائر فريش)
     {
-        id: 9,
+        id: 50,
         category: 'fresh-juice',
-        name: 'عصير برتقال',
-        description: 'عصير برتقال طازج 100٪ بدون إضافات',
-        price: '30',
+        name: 'لمون بالنعنع',
+        description: '',
+        price: '70',
         image: ''
     },
-    {
-        id: 10,
-        category: 'fresh-juice',
-        name: 'عصير مانجو',
-        description: 'عصير مانجو استوائي منعش',
-        price: '35',
-        image: ''
-    }
 ];
+
+export default drinksData;
 // Function to render drinks into the grid
 function renderDrinks(category = 'all') {
     const grid = document.getElementById('drinks-grid');
