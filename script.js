@@ -202,7 +202,7 @@ function startSnowEffect() {
     setTimeout(() => {
         isSnowing = false;
         document.body.classList.remove('snow-active');
-    }, 1000);
+    }, 2000);
 }
 
 // ربط التأثير بزر "آيس كوفي"
