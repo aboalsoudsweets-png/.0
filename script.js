@@ -5,7 +5,7 @@ const drinksData = [
         id: 1,
         category: 'frappe',
         name: 'فرابيه كراميل',
-       
+       description:'';
         price: '45',
         image: ''
     },
@@ -13,7 +13,7 @@ const drinksData = [
         id: 2,
         category: 'frappe',
         name: 'فرابيه شوكولاتة',
-        
+         description:'';
         price: '45',
         image: ''
     },
@@ -21,7 +21,7 @@ const drinksData = [
      // hot (مشاريب ساخنة)
     {
         id: 11,
-        category: 'hot',
+        category: 'hot', description:'';
         name: 'شاي',
         price: '45',
         image: ''
@@ -29,7 +29,7 @@ const drinksData = [
     {
         id: 12,
         category: 'hot',
-        
+         description:'';
         name: 'قهوة سنجل / دبل',
         price: '80,50',
         image: ''
