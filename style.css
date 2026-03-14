@@ -284,3 +284,40 @@ footer {
         font-size: 1rem;
     }
 }
+
+
+
+
+/* Snow Animation Effect */
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 99;
+}
+
+.snowflake {
+    position: absolute;
+    top: -20px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    will-change: transform;
+    animation-name: fall;
+    animation-timing-function: linear;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotateZ(360deg);
+    }
+}
+
+/* Background effect when snow is active */
+body.snow-active {
+    background: linear-gradient(135deg, rgba(200, 220, 255, 0.3), rgba(150, 200, 255, 0.2));
+}
