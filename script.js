@@ -107,6 +107,8 @@ function setupIceCoffeeButtonListener() {
 }
 
 // ==================== Coffee Beans Effect ====================
+
+// ==================== Coffee Beans Effect ====================
 let isCoffeeBeansActive = false;
 
 function startCoffeeBeansEffect() {
@@ -150,9 +152,9 @@ function removeCoffeeBeans() {
     const coffeeContainer = document.getElementById('coffee-beans');
     if (coffeeContainer) {
         coffeeContainer.innerHTML = '';
-        document.body.classList.remove('coffee-beans-active');
     }
     isCoffeeBeansActive = false;
+    document.body.classList.remove('coffee-beans-active');
 }
 
 function setupFrappeeButtonListener() {
@@ -162,10 +164,22 @@ function setupFrappeeButtonListener() {
     }
 }
 
-// Initialize the application when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-    renderDrinks('all');
-    setupCategoryFilters();
-    setupIceCoffeeButtonListener();
-    setupFrappeeButtonListener();
-});
+// Function to handle category button clicks
+function setupCategoryFilters() {
+    const buttons = document.querySelectorAll('.cat-btn');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            e.target.classList.add('active');
+            
+            const category = e.target.getAttribute('data-category');
+            renderDrinks(category);
+            
+            // ✅ شيل البن إذا الزرار ليس "frappe"
+            if (category !== 'frappe') {
+                removeCoffeeBeans();
+            }
+        });
+    });
+}
