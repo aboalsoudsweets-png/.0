@@ -222,6 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ==================== Coffee Beans Effect ====================
+// ==================== Coffee Beans Effect ====================
 let isCoffeeBeansActive = false;
 
 function startCoffeeBeansEffect() {
@@ -242,15 +243,18 @@ function startCoffeeBeansEffect() {
     for (let i = 0; i < numberOfBeans; i++) {
         const bean = document.createElement('div');
         bean.classList.add('coffee-bean');
-        bean.textContent = '☕';
+        
+        // استخدام صورة بدل الإيموجي
+        bean.innerHTML = '<img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=100&h=100&fit=crop" alt="coffee bean">';
         
         // موضع عشوائي
         bean.style.left = Math.random() * window.innerWidth + 'px';
         bean.style.top = Math.random() * window.innerHeight + 'px';
         
         // حجم عشوائي
-        const size = 20 + Math.random() * 40;
-        bean.style.fontSize = size + 'px';
+        const size = 40 + Math.random() * 80;
+        bean.style.width = size + 'px';
+        bean.style.height = size + 'px';
         
         // شفافية عشوائية
         bean.style.opacity = 0.3 + Math.random() * 0.4;
