@@ -154,3 +154,68 @@ document.addEventListener('DOMContentLoaded', () => {
     renderDrinks('all');
     setupCategoryFilters();
 });
+
+
+// ==================== Snow Effect ====================
+let isSnowing = false;
+
+function startSnowEffect() {
+    if (isSnowing) return; // منع التكرار
+    isSnowing = true;
+    document.body.classList.add('snow-active');
+
+    // إنشاء عنصر الثلج إذا لم يكن موجوداً
+    let snow = document.getElementById('snow');
+    if (!snow) {
+        snow = document.createElement('div');
+        snow.id = 'snow';
+        document.body.appendChild(snow);
+    }
+    
+    // ��نتاج النكعبات بشكل متكرر
+    const snowInterval = setInterval(() => {
+        if (!isSnowing) {
+            clearInterval(snowInterval);
+            return;
+        }
+        
+        const snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        snowflake.textContent = '❄️';
+        snowflake.style.left = Math.random() * window.innerWidth + 'px';
+        
+        const size = 15 + Math.random() * 30;
+        snowflake.style.fontSize = size + 'px';
+        snowflake.style.opacity = 0.4 + Math.random() * 0.6;
+        
+        const duration = 4 + Math.random() * 6;
+        snowflake.style.animationDuration = duration + 's';
+        
+        snow.appendChild(snowflake);
+        
+        setTimeout(() => {
+            snowflake.remove();
+        }, duration * 1000);
+    }, 100);
+    
+    // إيقاف بعد 8 ثواني
+    setTimeout(() => {
+        isSnowing = false;
+        document.body.classList.remove('snow-active');
+    }, 8000);
+}
+
+// ربط التأثير بزر "آيس كوفي"
+function setupIceCoffeeButtonListener() {
+    const iceCoffeeBtn = document.querySelector('[data-category="ice-coffee"]');
+    if (iceCoffeeBtn) {
+        iceCoffeeBtn.addEventListener('click', startSnowEffect);
+    }
+}
+
+// شغل الربط عند تحميل الصفحة
+document.addEventListener('DOMContentLoaded', () => {
+    renderDrinks('all');
+    setupCategoryFilters();
+    setupIceCoffeeButtonListener(); // أضف هذا السطر الجديد
+});
