@@ -180,7 +180,7 @@ function startSnowEffect() {
         document.body.appendChild(snow);
     }
     
-    // إنتاج النكعبات بشكل متكرر
+    // ��نتاج النكعبات بشكل متكرر
     const snowInterval = setInterval(() => {
         if (!isSnowing) {
             clearInterval(snowInterval);
@@ -221,7 +221,13 @@ function setupIceCoffeeButtonListener() {
     }
 }
 
-
+// شغل الربط عند تحميل الصفحة
+document.addEventListener('DOMContentLoaded', () => {
+    renderDrinks('all');
+    setupCategoryFilters();
+    setupIceCoffeeButtonListener(); 
+    setupFrappeeButtonListener();// أضف هذا السطر الجديد
+});
 // ==================== Coffee Beans Effect ====================
 let isCoffeeBeansActive = false;
 
