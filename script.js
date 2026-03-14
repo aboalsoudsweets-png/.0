@@ -181,7 +181,7 @@ function startSnowEffect() {
         
         const snowflake = document.createElement('div');
         snowflake.classList.add('snowflake');
-        snowflake.textContent = '❄️';
+        snowflake.textContent = '🧊';
         snowflake.style.left = Math.random() * window.innerWidth + 'px';
         
         const size = 15 + Math.random() * 30;
