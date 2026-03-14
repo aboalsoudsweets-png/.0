@@ -198,11 +198,11 @@ function startSnowEffect() {
         }, duration * 1000);
     }, 300);
     
-    // إيقاف بعد 8 ثواني
+    // إيقاف بعد 1 ثواني
     setTimeout(() => {
         isSnowing = false;
         document.body.classList.remove('snow-active');
-    }, 8000);
+    }, 1000);
 }
 
 // ربط التأثير بزر "آيس كوفي"
