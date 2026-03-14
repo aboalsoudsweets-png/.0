@@ -139,6 +139,14 @@ function setupCategoryFilters() {
             // Get the category and render drinks
             const category = e.target.getAttribute('data-category');
             renderDrinks(category);
+            
+            // إذا كان الزر ليس "فرابيه"، شيل حبات ا��قهوة
+            if (category !== 'frappe') {
+                removeCoffeeBeansEffect();
+            } else {
+                // إذا كان "فرابيه"، أظهر حبات القهوة
+                startCoffeeBeansEffect();
+            }
         });
     });
 }
@@ -172,7 +180,7 @@ function startSnowEffect() {
         document.body.appendChild(snow);
     }
     
-    // ��نتاج النكعبات بشكل متكرر
+    // إنتاج النكعبات بشكل متكرر
     const snowInterval = setInterval(() => {
         if (!isSnowing) {
             clearInterval(snowInterval);
@@ -213,15 +221,6 @@ function setupIceCoffeeButtonListener() {
     }
 }
 
-// شغل الربط عند تحميل الصفحة
-document.addEventListener('DOMContentLoaded', () => {
-    renderDrinks('all');
-    setupCategoryFilters();
-    setupIceCoffeeButtonListener(); 
-    setupFrappeeButtonListener();// أضف هذا السطر الجديد
-});
-
-// ==================== Coffee Beans Effect ====================
 
 // ==================== Coffee Beans Effect ====================
 let isCoffeeBeansActive = false;
@@ -271,10 +270,12 @@ function startCoffeeBeansEffect() {
     });
 }
 
-// ربط التأثير بزر "فرابيه"
-function setupFrappeeButtonListener() {
-    const frappeBtn = document.querySelector('[data-category="frappe"]');
-    if (frappeBtn) {
-        frappeBtn.addEventListener('click', startCoffeeBeansEffect);
+// دالة جديدة لحذف حبات القهوة
+function removeCoffeeBeansEffect() {
+    const coffeeContainer = document.getElementById('coffee-beans');
+    if (coffeeContainer) {
+        coffeeContainer.remove();
     }
+    isCoffeeBeansActive = false;
+    document.body.classList.remove('coffee-beans-active');
 }
