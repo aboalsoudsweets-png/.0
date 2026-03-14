@@ -258,7 +258,7 @@ function startCoffeeBeansEffect() {
         const bean = document.createElement('div');
         bean.classList.add('coffee-bean');
         
-        bean.innerHTML = '<img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=200&h=200&fit=crop" alt="coffee bean">';
+        bean.innerHTML = '<img src="https://share.google/SvGH8aOh9wzfoCpdo">';
         
         // تطبيق الموضع
         Object.assign(bean.style, position);
