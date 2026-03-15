@@ -7,7 +7,7 @@ const drinksData = [
         name: 'اميركان كوفي',
         description: '',
         price: '80',
-        image: ''
+        image: 'amerekan.jpg'
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const drinksData = [
         name: 'قهوة سنجل',
         description: '',
         price: '50',
-        image: ''
+        image: 'qahwasngel.jpg'
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ const drinksData = [
         name: 'قهوة دبل',
         description: '',
         price: '80',
-        image: ''
+        image: 'qahwadabel.jpg'
     },
     {
         id: 4,
@@ -31,7 +31,7 @@ const drinksData = [
         name: 'نسكافية',
         description: '',
         price: '80',
-        image: ''
+        image: 'neskaf.jpg'
     },
     {
         id: 5,
@@ -39,7 +39,7 @@ const drinksData = [
         name: 'كابيتشينو',
         description: '',
         price: '80',
-        image: ''
+        image: 'kabetshino.jpg'
     },
     {
         id: 6,
@@ -47,7 +47,7 @@ const drinksData = [
         name: 'ينسون',
         description: '',
         price: '50',
-        image: ''
+        image: 'yanson.jpg'
     },
     {
         id: 7,
@@ -55,7 +55,7 @@ const drinksData = [
         name: 'كركديه',
         description: '',
         price: '50',
-        image: ''
+        image: 'karkad.jpg'
     },
     {
         id: 8,
@@ -63,7 +63,7 @@ const drinksData = [
         name: 'قرفه',
         description: '',
         price: '50',
-        image: ''
+        image: 'qwrfa.jpg'
     },
     {
         id: 9,
@@ -71,7 +71,7 @@ const drinksData = [
         name: 'جنزبيل',
         description: '',
         price: '50',
-        image: ''
+        image: 'ganz.jpg'
     },
     {
         id: 10,
@@ -79,7 +79,7 @@ const drinksData = [
         name: 'اعشاب',
         description: '',
         price: '60',
-        image: ''
+        image: 'aashap.png'
     },
     {
         id: 11,
@@ -87,7 +87,7 @@ const drinksData = [
         name: 'اسبريسو سنجل',
         description: '',
         price: '50',
-        image: ''
+        image: 'aspresosengl.png'
     },
     {
         id: 12,
@@ -95,7 +95,7 @@ const drinksData = [
         name: 'اسبريسو دبل',
         description: '',
         price: '80',
-        image: ''
+        image: 'aspresodabel.png'
     },
     {
         id: 13,
@@ -103,7 +103,7 @@ const drinksData = [
         name: 'لاتيه',
         description: '',
         price: '90',
-        image: ''
+        image: 'lateh.png'
     },
     {
         id: 14,
@@ -111,7 +111,7 @@ const drinksData = [
         name: 'قهوة تركي',
         description: '',
         price: '50',
-        image: ''
+        image: 'toky.png'
     },
     {
         id: 15,
@@ -119,7 +119,7 @@ const drinksData = [
         name: 'قهوة فرنساوي',
         description: '',
         price: '60',
-        image: ''
+        image: 'faransawe.png'
     },
     {
         id: 16,
@@ -127,7 +127,7 @@ const drinksData = [
         name: 'هوت شوكليت',
         description: '',
         price: '80',
-        image: ''
+        image: 'shoklet.png'
     },
     {
         id: 17,
@@ -135,7 +135,7 @@ const drinksData = [
         name: 'شاي',
         description: '',
         price: '90',
-        image: ''
+        image: 'shay.png'
     },
     {
         id: 18,
@@ -143,7 +143,7 @@ const drinksData = [
         name: 'شاي بالنعنع',
         description: '',
         price: '50',
-        image: ''
+        image: 'shaynaana.png'
     },
     {
         id: 19,
@@ -151,7 +151,7 @@ const drinksData = [
         name: 'حليب ساخن',
         description: '',
         price: '60',
-        image: ''
+        image: 'laban.png'
     },
     {
         id: 20,
@@ -159,7 +159,7 @@ const drinksData = [
         name: 'شاي بحليب',
         description: '',
         price: '75',
-        image: ''
+        image: 'shayblabn.png'
     },
 
     // Frappe (فرابيه)
