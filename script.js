@@ -257,7 +257,15 @@ const drinksData = [
     },
 
     // Mojito (موهيتو)
-    
+
+     {
+        id: 69,
+        category: 'mojito',
+        name: 'موهيتو كلاسيك',
+        description: '',
+        price: '100',
+        image: '12.png'
+    },
     {
         id: 70,
         category: 'mojito',
@@ -272,7 +280,7 @@ const drinksData = [
         name: 'موهيتو باشون',
         description: '',
         price: '100',
-        image: '12.png'
+        image: '55.png'
     },
     {
         id: 37,
