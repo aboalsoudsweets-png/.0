@@ -510,7 +510,7 @@ function startSnowEffect() {
     setTimeout(() => {
         isSnowing = false;
         document.body.classList.remove('snow-active');
-    }, 1500);
+    }, 1000);
 }
 
 function setupIceCoffeeButtonListener() {
