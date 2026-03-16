@@ -264,7 +264,7 @@ const drinksData = [
         name: 'موهيتو بلو بيري',
         description: '',
         price: '100',
-        image: '13'
+        image: '13.png'
     },
     {
         id: 36,
@@ -272,7 +272,7 @@ const drinksData = [
         name: 'موهيتو باشون',
         description: '',
         price: '100',
-        image: '12'
+        image: '12.png'
     },
     {
         id: 37,
