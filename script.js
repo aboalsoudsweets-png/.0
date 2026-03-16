@@ -304,7 +304,7 @@ const drinksData = [
         name: 'موهيتو بطيخ',
         description: '',
         price: '100',
-        image: '1000'
+        image: '1000.png'
     },
     {
         id: 40,
