@@ -493,7 +493,7 @@ function startSnowEffect() {
         snowflake.textContent = '🧊';
         snowflake.style.left = Math.random() * window.innerWidth + 'px';
         
-        const size = 30 + Math.random() * 40;
+        const size = 50 + Math.random() * 50;
         snowflake.style.fontSize = size + 'px';
         snowflake.style.opacity = 0.4 + Math.random() * 0.6;
         
@@ -510,7 +510,7 @@ function startSnowEffect() {
     setTimeout(() => {
         isSnowing = false;
         document.body.classList.remove('snow-active');
-    }, 3000);
+    }, 1500);
 }
 
 function setupIceCoffeeButtonListener() {
