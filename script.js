@@ -299,7 +299,7 @@ const drinksData = [
         image: '15.png'
     },
     {
-        id: 39,
+        id: 90,
         category: 'mojito',
         name: 'موهيتو بطيخ',
         description: '',
@@ -490,10 +490,10 @@ function startSnowEffect() {
         
         const snowflake = document.createElement('div');
         snowflake.classList.add('snowflake');
-        snowflake.textContent = '❄️';
+        snowflake.textContent = '🧊';
         snowflake.style.left = Math.random() * window.innerWidth + 'px';
         
-        const size = 15 + Math.random() * 30;
+        const size = 30 + Math.random() * 40;
         snowflake.style.fontSize = size + 'px';
         snowflake.style.opacity = 0.4 + Math.random() * 0.6;
         
@@ -510,7 +510,7 @@ function startSnowEffect() {
     setTimeout(() => {
         isSnowing = false;
         document.body.classList.remove('snow-active');
-    }, 8000);
+    }, 3000);
 }
 
 function setupIceCoffeeButtonListener() {
