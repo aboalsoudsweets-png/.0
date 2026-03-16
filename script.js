@@ -259,7 +259,7 @@ const drinksData = [
     // Mojito (موهيتو)
     
     {
-        id: 35,
+        id: 70,
         category: 'mojito',
         name: 'موهيتو بلو بيري',
         description: '',
@@ -267,7 +267,7 @@ const drinksData = [
         image: '13.png'
     },
     {
-        id: 36,
+        id: 71,
         category: 'mojito',
         name: 'موهيتو باشون',
         description: '',
