@@ -134,7 +134,7 @@ const drinksData = [
         category: 'hot',
         name: 'شاي',
         description: '',
-        price: '90',
+        price: '45',
         image: 'shay.png'
     },
     {
@@ -169,7 +169,7 @@ const drinksData = [
         name: 'فرابيه كلاسيك',
         description: '',
         price: '80',
-        image: ''
+        image: '1.png'
     },
     {
         id: 22,
@@ -177,7 +177,7 @@ const drinksData = [
         name: 'فرابيه نوتيلا',
         description: '',
         price: '95',
-        image: ''
+        image: '2.png'
     },
     {
         id: 23,
@@ -185,7 +185,7 @@ const drinksData = [
         name: 'فرابيه لوتس',
         description: '',
         price: '95',
-        image: ''
+        image: '3.png'
     },
     {
         id: 24,
@@ -193,7 +193,7 @@ const drinksData = [
         name: 'فرابيه بندق',
         description: '',
         price: '95',
-        image: ''
+        image: '4.png'
     },
     {
         id: 25,
@@ -201,7 +201,7 @@ const drinksData = [
         name: 'فرابيه فانيليا',
         description: '',
         price: '95',
-        image: ''
+        image: '5.png'
     },
     {
         id: 26,
@@ -209,7 +209,7 @@ const drinksData = [
         name: 'فرابيه كراميل',
         description: '',
         price: '95',
-        image: ''
+        image: '6.png'
     },
     {
         id: 27,
@@ -217,7 +217,7 @@ const drinksData = [
         name: 'فرابيه شوكليت',
         description: '',
         price: '95',
-        image: ''
+        image: '7.png'
     },
 
     // Ice Coffee (آيس كوفي)
@@ -227,7 +227,7 @@ const drinksData = [
         name: 'ايس كافيه',
         description: '',
         price: '80',
-        image: ''
+        image: '8.png'
     },
     {
         id: 29,
@@ -235,57 +235,36 @@ const drinksData = [
         name: 'آيس لاتيه',
         description: '',
         price: '90',
-        image: ''
+        image: '9.png'
     },
-    {
-        id: 30,
-        category: 'ice-coffee',
-        name: 'ايس سبانش لاتيه',
-        description: '',
-        price: '90',
-        image: ''
-    },
+    
     {
         id: 31,
         category: 'ice-coffee',
         name: 'ايس لوتس',
         description: '',
         price: '90',
-        image: ''
+        image: '10.png'
     },
-    {
-        id: 32,
-        category: 'ice-coffee',
-        name: 'ايس موكا',
-        description: '',
-        price: '90',
-        image: ''
-    },
+    
     {
         id: 33,
         category: 'ice-coffee',
         name: 'ايس وايت موكا',
         description: '',
         price: '90',
-        image: ''
+        image: '11.png'
     },
 
     // Mojito (موهيتو)
-    {
-        id: 34,
-        category: 'mojito',
-        name: 'موهيتو كلاسيك',
-        description: '',
-        price: '100',
-        image: ''
-    },
+    
     {
         id: 35,
         category: 'mojito',
         name: 'موهيتو بلو بيري',
         description: '',
         price: '100',
-        image: ''
+        image: '13'
     },
     {
         id: 36,
@@ -293,7 +272,7 @@ const drinksData = [
         name: 'موهيتو باشون',
         description: '',
         price: '100',
-        image: ''
+        image: '12'
     },
     {
         id: 37,
@@ -301,7 +280,7 @@ const drinksData = [
         name: 'موهيتو فراوله',
         description: '',
         price: '100',
-        image: ''
+        image: '14.png'
     },
     {
         id: 38,
@@ -309,7 +288,7 @@ const drinksData = [
         name: 'موهيتو اناناس',
         description: '',
         price: '100',
-        image: ''
+        image: '15.png'
     },
     {
         id: 39,
@@ -317,7 +296,7 @@ const drinksData = [
         name: 'موهيتو بطيخ',
         description: '',
         price: '100',
-        image: ''
+        image: '1000'
     },
     {
         id: 40,
@@ -325,7 +304,7 @@ const drinksData = [
         name: 'موهيتو تفاح',
         description: '',
         price: '100',
-        image: ''
+        image: '16.png'
     },
     {
         id: 41,
@@ -333,7 +312,7 @@ const drinksData = [
         name: 'موهيتو مانجه',
         description: '',
         price: '100',
-        image: ''
+        image: '17.png'
     },
     {
         id: 42,
@@ -341,7 +320,7 @@ const drinksData = [
         name: 'موهيتو خوخ',
         description: '',
         price: '100',
-        image: ''
+        image: '18.png'
     },
 
     // Milkshake (ميلك شيك)
@@ -351,7 +330,7 @@ const drinksData = [
         name: 'ميلك شيك فراولة',
         description: '',
         price: '85',
-        image: ''
+        image: '19.png'
     },
     {
         id: 44,
@@ -359,7 +338,7 @@ const drinksData = [
         name: 'ميلك شيك شوكولاتة',
         description: '',
         price: '85',
-        image: ''
+        image: '20.png'
     },
     {
         id: 45,
@@ -367,15 +346,16 @@ const drinksData = [
         name: 'ميلك شيك مانجة',
         description: '',
         price: '85',
-        image: ''
+        image: '21.png'
     },
+    
     {
         id: 46,
         category: 'milkshake',
         name: 'ميلك شيك فانيليا',
         description: '',
         price: '85',
-        image: ''
+        image: '22.png'
     },
     {
         id: 47,
@@ -383,7 +363,7 @@ const drinksData = [
         name: 'ميلك شيك لوتس',
         description: '',
         price: '85',
-        image: ''
+        image: '23.png'
     },
     {
         id: 48,
@@ -391,7 +371,7 @@ const drinksData = [
         name: 'ميلك شيك نوتيلا',
         description: '',
         price: '85',
-        image: ''
+        image: '24.png'
     },
     {
         id: 49,
@@ -399,7 +379,7 @@ const drinksData = [
         name: 'ميلك شيك بلو بيري',
         description: '',
         price: '85',
-        image: ''
+        image: '25.png'
     },
 
     // Fresh Juice (عصائر فريش)
@@ -409,7 +389,7 @@ const drinksData = [
         name: 'لمون بالنعنع',
         description: '',
         price: '70',
-        image: ''
+        image: '26.png'
     },
 ];
 
