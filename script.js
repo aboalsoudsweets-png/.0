@@ -1,21 +1,14 @@
 // Sample Data for Drinks using high-quality images
 const drinksData = [
     // Hot Drinks (المشروبات الساخنة)
-    {
-        id: 1,
-        category: 'hot',
-        name: 'اميركان كوفي',
-        description: '',
-        price: '80',
-        image: 'amerekan.jpg'
-    },
+    
     {
         id: 2,
         category: 'hot',
         name: 'قهوة سنجل',
         description: '',
         price: '50',
-        image: 'qahwasngel.jpg'
+        image: 'qahwasngel1.jpg'
     },
     {
         id: 3,
@@ -23,7 +16,7 @@ const drinksData = [
         name: 'قهوة دبل',
         description: '',
         price: '80',
-        image: 'qahwadabel.jpg'
+        image: 'qahwadabel1.jpg'
     },
     {
         id: 4,
@@ -87,7 +80,7 @@ const drinksData = [
         name: 'اسبريسو سنجل',
         description: '',
         price: '50',
-        image: 'aspresosengl.png'
+        image: 'aspresosengl2.png'
     },
     {
         id: 12,
@@ -95,7 +88,7 @@ const drinksData = [
         name: 'اسبريسو دبل',
         description: '',
         price: '80',
-        image: 'aspresodabel.png'
+        image: 'amerekan1.png'
     },
     {
         id: 13,
@@ -103,7 +96,7 @@ const drinksData = [
         name: 'لاتيه',
         description: '',
         price: '90',
-        image: 'lateh.png'
+        image: 'lateh1.png'
     },
     {
         id: 14,
