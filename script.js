@@ -265,7 +265,7 @@ const drinksData = [
         name: 'موهيتو كلاسيك',
         description: '',
         price: '100',
-        image: '12.png'
+        image: 'klas.jpg'
     },
     {
         id: 70,
