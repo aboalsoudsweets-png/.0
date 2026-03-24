@@ -40,7 +40,7 @@ const drinksData = [
         name: 'نسكافية',
         description: '',
         price: '80',
-        image: 'neskaf.jpg'
+        image: 'neska.jpg'
     },
     {
         id: 5,
