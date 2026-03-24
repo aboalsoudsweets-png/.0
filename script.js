@@ -80,7 +80,7 @@ const drinksData = [
         name: 'اسبريسو سنجل',
         description: '',
         price: '50',
-        image: 'aspresosengl2.png'
+        image: 'aspresosengl2.jpg'
     },
     {
         id: 12,
@@ -88,7 +88,7 @@ const drinksData = [
         name: 'اسبريسو دبل',
         description: '',
         price: '80',
-        image: 'amerekan1.png'
+        image: 'amerekan1.jpg'
     },
     {
         id: 13,
@@ -96,7 +96,7 @@ const drinksData = [
         name: 'لاتيه',
         description: '',
         price: '90',
-        image: 'lateh1.png'
+        image: 'faransawe.png'
     },
     {
         id: 14,
@@ -112,7 +112,7 @@ const drinksData = [
         name: 'قهوة فرنساوي',
         description: '',
         price: '60',
-        image: 'faransawe.png'
+        image: 'lateh1.jpg'
     },
     {
         id: 16,
