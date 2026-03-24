@@ -5,7 +5,7 @@ const drinksData = [
     {
         id: 100,
         category: 'hot',
-        name: 'اسبريسو سنجل',
+        name: 'إسبريسو سنجل',
         description: '',
         price: '50',
         image: 'sepress0.jpg'
@@ -13,7 +13,7 @@ const drinksData = [
     {
         id: 101,
         category: 'hot',
-        name: 'اسبريسو دبل',
+        name: 'إسبريسو دبل ',
         description: '',
         price: '80',
         image: 'sepresd.jpg'
@@ -93,7 +93,7 @@ const drinksData = [
     {
         id: 11,
         category: 'hot',
-        name: 'قهوة مغلية سنجل',
+        name: 'قهوة غزاوي سنجل',
         description: '',
         price: '50',
         image: 'aspresosengl20.png'
@@ -101,7 +101,7 @@ const drinksData = [
     {
         id: 12,
         category: 'hot',
-        name: 'قهوة مغلية دبل',
+        name: 'قهوة غزاوي دبل',
         description: '',
         price: '80',
         image: 'amerekan10.jpg'
