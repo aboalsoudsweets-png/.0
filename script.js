@@ -48,7 +48,7 @@ const drinksData = [
         name: 'قهوة فرنساوي',
         description: '',
         price: '80',
-        image: 'lat.jpg'
+        image: 'lat.png'
     },
     {
         id: 6,
