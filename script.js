@@ -34,6 +34,23 @@ const drinksData = [
         price: '80',
         image: 'qahwadabel10.png'
     },
+
+        {
+        id: 12,
+        category: 'hot',
+        name: 'قهوة غزاوي دبل',
+        description: '',
+        price: '80',
+        image: 'amerekan10.jpg'
+    },
+    {
+        id: 11,
+        category: 'hot',
+        name: 'قهوة غزاوي سنجل',
+        description: '',
+        price: '50',
+        image: 'aspresosengl20.png'
+    },
     {
         id: 4,
         category: 'hot',
@@ -49,6 +66,38 @@ const drinksData = [
         description: '',
         price: '80',
         image: 'lat.png'
+    },
+        {
+        id: 15,
+        category: 'hot',
+        name: 'كابيتشينو',
+        description: '',
+        price: '90',
+        image: 'lateh10.jpg'
+    },
+        {
+        id: 13,
+        category: 'hot',
+        name: 'لاتيه',
+        description: '',
+        price: '95',
+        image: 'faransawe0.jpg'
+    },
+    {
+        id: 17,
+        category: 'hot',
+        name: 'شاي',
+        description: '',
+        price: '45',
+        image: 'shay.png'
+    },
+        {
+        id: 20,
+        category: 'hot',
+        name: 'شاي بحليب',
+        description: '',
+        price: '75',
+        image: 'shayblabn.png'
     },
     {
         id: 6,
@@ -90,38 +139,10 @@ const drinksData = [
         price: '60',
         image: 'aashap.png'
     },
-    {
-        id: 11,
-        category: 'hot',
-        name: 'قهوة غزاوي سنجل',
-        description: '',
-        price: '50',
-        image: 'aspresosengl20.png'
-    },
-    {
-        id: 12,
-        category: 'hot',
-        name: 'قهوة غزاوي دبل',
-        description: '',
-        price: '80',
-        image: 'amerekan10.jpg'
-    },
-    {
-        id: 13,
-        category: 'hot',
-        name: 'لاتيه',
-        description: '',
-        price: '95',
-        image: 'faransawe0.jpg'
-    },
-    {
-        id: 15,
-        category: 'hot',
-        name: 'كابيتشينو',
-        description: '',
-        price: '90',
-        image: 'lateh10.jpg'
-    },
+    
+
+
+
     {
         id: 16,
         category: 'hot',
@@ -130,14 +151,7 @@ const drinksData = [
         price: '80',
         image: 'shoklet.png'
     },
-    {
-        id: 17,
-        category: 'hot',
-        name: 'شاي',
-        description: '',
-        price: '45',
-        image: 'shay.png'
-    },
+    
     {
         id: 18,
         category: 'hot',
@@ -154,14 +168,7 @@ const drinksData = [
         price: '60',
         image: 'laban.png'
     },
-    {
-        id: 20,
-        category: 'hot',
-        name: 'شاي بحليب',
-        description: '',
-        price: '75',
-        image: 'shayblabn.png'
-    },
+
 
     // Frappe (فرابيه)
     {
