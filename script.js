@@ -8,7 +8,7 @@ const drinksData = [
         name: 'اسبريسو سنجل',
         description: '',
         price: '50',
-        image: 'sepress0.png'
+        image: 'sepress0.jpg'
     },
     {
         id: 101,
@@ -16,7 +16,7 @@ const drinksData = [
         name: 'اسبريسو دبل',
         description: '',
         price: '80',
-        image: 'sepresd.png'
+        image: 'sepresd.jpg'
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const drinksData = [
         name: 'قهوة تركي سنجل',
         description: '',
         price: '50',
-        image: 'qahwasngel10.jpg'
+        image: 'qahwasngel10.png'
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ const drinksData = [
         name: 'قهوة تركي دبل',
         description: '',
         price: '80',
-        image: 'qahwadabel10.jpg'
+        image: 'qahwadabel10.png'
     },
     {
         id: 4,
@@ -96,7 +96,7 @@ const drinksData = [
         name: 'قهوة مغلية سنجل',
         description: '',
         price: '50',
-        image: 'aspresosengl20.jpg'
+        image: 'aspresosengl20.png'
     },
     {
         id: 12,
@@ -112,7 +112,7 @@ const drinksData = [
         name: 'لاتيه',
         description: '',
         price: '90',
-        image: 'faransawe0.png'
+        image: 'faransawe0.jpg'
     },
     {
         id: 15,
