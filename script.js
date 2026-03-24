@@ -91,6 +91,14 @@ const drinksData = [
         price: '45',
         image: 'shay.png'
     },
+    {
+        id: 18,
+        category: 'hot',
+        name: 'شاي بالنعنع',
+        description: '',
+        price: '50',
+        image: 'shaynaana.png'
+    },
         {
         id: 20,
         category: 'hot',
@@ -152,14 +160,7 @@ const drinksData = [
         image: 'shoklet.png'
     },
     
-    {
-        id: 18,
-        category: 'hot',
-        name: 'شاي بالنعنع',
-        description: '',
-        price: '50',
-        image: 'shaynaana.png'
-    },
+    
     {
         id: 19,
         category: 'hot',
