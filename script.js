@@ -111,7 +111,7 @@ const drinksData = [
         category: 'hot',
         name: 'لاتيه',
         description: '',
-        price: '90',
+        price: '95',
         image: 'faransawe0.jpg'
     },
     {
@@ -119,7 +119,7 @@ const drinksData = [
         category: 'hot',
         name: 'كابيتشينو',
         description: '',
-        price: '60',
+        price: '90',
         image: 'lateh10.jpg'
     },
     {
