@@ -45,10 +45,10 @@ const drinksData = [
     {
         id: 5,
         category: 'hot',
-        name: 'كابيتشينو',
+        name: 'قهوة فرنساوي',
         description: '',
         price: '80',
-        image: 'kabetshino.jpg'
+        image: 'lat.jpg'
     },
     {
         id: 6,
@@ -117,7 +117,7 @@ const drinksData = [
     {
         id: 15,
         category: 'hot',
-        name: 'قهوة فرنساوي',
+        name: 'كابيتشينو',
         description: '',
         price: '60',
         image: 'lateh10.jpg'
