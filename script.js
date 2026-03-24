@@ -1,4 +1,4 @@
-// Sample Data for Drinks using high-quality images
+// Sample Data for D rinks using high-quality images
 const drinksData = [
     // Hot Drinks (المشروبات الساخنة)
 
