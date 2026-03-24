@@ -1,14 +1,30 @@
 // Sample Data for Drinks using high-quality images
 const drinksData = [
     // Hot Drinks (المشروبات الساخنة)
-    
+
+    {
+        id: 100,
+        category: 'hot',
+        name: 'اسبريسو سنجل',
+        description: '',
+        price: '50',
+        image: 'sepress0.png'
+    },
+    {
+        id: 101,
+        category: 'hot',
+        name: 'اسبريسو دبل',
+        description: '',
+        price: '80',
+        image: 'sepresd.png'
+    },
     {
         id: 2,
         category: 'hot',
         name: 'قهوة تركي سنجل',
         description: '',
         price: '50',
-        image: 'qahwasngel1.jpg'
+        image: 'qahwasngel10.jpg'
     },
     {
         id: 3,
@@ -16,7 +32,7 @@ const drinksData = [
         name: 'قهوة تركي دبل',
         description: '',
         price: '80',
-        image: 'qahwadabel1.jpg'
+        image: 'qahwadabel10.jpg'
     },
     {
         id: 4,
@@ -80,7 +96,7 @@ const drinksData = [
         name: 'قهوة مغلية سنجل',
         description: '',
         price: '50',
-        image: 'aspresosengl2.jpg'
+        image: 'aspresosengl20.jpg'
     },
     {
         id: 12,
@@ -88,7 +104,7 @@ const drinksData = [
         name: 'قهوة مغلية دبل',
         description: '',
         price: '80',
-        image: 'amerekan1.jpg'
+        image: 'amerekan10.jpg'
     },
     {
         id: 13,
@@ -96,15 +112,7 @@ const drinksData = [
         name: 'لاتيه',
         description: '',
         price: '90',
-        image: 'faransawe.png'
-    },
-    {
-        id: 14,
-        category: 'hot',
-        name: 'قهوة تركي',
-        description: '',
-        price: '50',
-        image: 'toky.png'
+        image: 'faransawe0.png'
     },
     {
         id: 15,
@@ -112,7 +120,7 @@ const drinksData = [
         name: 'قهوة فرنساوي',
         description: '',
         price: '60',
-        image: 'lateh1.jpg'
+        image: 'lateh10.jpg'
     },
     {
         id: 16,
