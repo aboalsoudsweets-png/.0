@@ -419,7 +419,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'عصير زبادي فواكة',
         description: '',
-        price: '85',
+        price: '90',
         image: 'ppo.png'
     },
 
