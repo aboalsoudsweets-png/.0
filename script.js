@@ -99,6 +99,14 @@ const drinksData = [
         price: '50',
         image: 'shaynaana.png'
     },
+     {
+        id: 800,
+        category: 'hot',
+        name: 'هوت سيدر',
+        description: '',
+        price: '75',
+        image: 'images.png'
+    },
         {
         id: 20,
         category: 'hot',
@@ -397,6 +405,22 @@ const drinksData = [
         description: '',
         price: '85',
         image: '25.png'
+    },
+     {
+        id: 51,
+        category: 'milkshake',
+        name: 'عصير زبادي سادة',
+        description: '',
+        price: '70',
+        image: 'ppp.png'
+    },
+     {
+        id: 49,
+        category: 'milkshake',
+        name: 'ميلك شيك بلو بيري',
+        description: '',
+        price: '85',
+        image: 'ppo.png'
     },
 
     // Fresh Juice (عصائر فريش)
