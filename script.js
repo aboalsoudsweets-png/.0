@@ -408,7 +408,7 @@ const drinksData = [
     },
      {
         id: 51,
-        category: 'milkshake',
+        category: 'fresh-juice',
         name: 'عصير زبادي سادة',
         description: '',
         price: '70',
@@ -416,7 +416,7 @@ const drinksData = [
     },
      {
         id: 52,
-        category: 'milkshake',
+        category: 'fresh-juice',
         name: 'عصير زبادي فواكة',
         description: '',
         price: '90',
