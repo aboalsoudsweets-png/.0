@@ -415,9 +415,9 @@ const drinksData = [
         image: 'ppp.png'
     },
      {
-        id: 49,
+        id: 52,
         category: 'milkshake',
-        name: 'ميلك شيك بلو بيري',
+        name: 'عصير زبادي فواكة',
         description: '',
         price: '85',
         image: 'ppo.png'
