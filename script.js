@@ -354,7 +354,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك فراولة',
         description: '',
-        price: '85',
+        price: '95',
         image: '19.png'
     },
     {
@@ -362,7 +362,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك شوكولاتة',
         description: '',
-        price: '85',
+        price: '95',
         image: '20.png'
     },
     {
@@ -370,7 +370,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك مانجة',
         description: '',
-        price: '85',
+        price: '95',
         image: '21.png'
     },
     
@@ -379,7 +379,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك فانيليا',
         description: '',
-        price: '85',
+        price: '95',
         image: '22.png'
     },
     {
@@ -387,7 +387,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك لوتس',
         description: '',
-        price: '85',
+        price: '95',
         image: '23.png'
     },
     {
@@ -395,7 +395,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك نوتيلا',
         description: '',
-        price: '85',
+        price: '95',
         image: '24.png'
     },
     {
@@ -403,7 +403,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك بلو بيري',
         description: '',
-        price: '85',
+        price: '95',
         image: '25.png'
     },
      {
