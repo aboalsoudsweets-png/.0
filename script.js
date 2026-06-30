@@ -354,7 +354,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك فراولة',
         description: '',
-        price: '95',
+        price: '150',
         image: '19.png'
     },
     {
@@ -362,7 +362,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك شوكولاتة',
         description: '',
-        price: '95',
+        price: '150',
         image: '20.png'
     },
     {
