@@ -251,7 +251,7 @@ const drinksData = [
         category: 'ice-coffee',
         name: 'آيس لاتيه',
         description: '',
-        price: '90',
+        price: '95',
         image: '9.png'
     },
     
@@ -260,7 +260,7 @@ const drinksData = [
         category: 'ice-coffee',
         name: 'ايس لوتس',
         description: '',
-        price: '90',
+        price: '95',
         image: '10.png'
     },
     
@@ -269,7 +269,7 @@ const drinksData = [
         category: 'ice-coffee',
         name: 'ايس وايت موكا',
         description: '',
-        price: '90',
+        price: '95',
         image: '11.png'
     },
 
@@ -370,7 +370,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك مانجة',
         description: '',
-        price: '95',
+        price: '150',
         image: '21.png'
     },
     
@@ -379,7 +379,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك فانيليا',
         description: '',
-        price: '95',
+        price: '150',
         image: '22.png'
     },
     {
@@ -387,7 +387,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك لوتس',
         description: '',
-        price: '95',
+        price: '150',
         image: '23.png'
     },
     {
@@ -395,7 +395,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك نوتيلا',
         description: '',
-        price: '95',
+        price: '150',
         image: '24.png'
     },
     {
@@ -403,7 +403,7 @@ const drinksData = [
         category: 'milkshake',
         name: 'ميلك شيك بلو بيري',
         description: '',
-        price: '95',
+        price: '150',
         image: '25.png'
     },
      {
