@@ -243,7 +243,7 @@ const drinksData = [
         category: 'ice-coffee',
         name: 'ايس كافيه',
         description: '',
-        price: '80',
+        price: '95',
         image: '8.png'
     },
     {
